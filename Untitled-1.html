@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Untitled-2.js" type="javascript"></script>
+
+</head>
+<body>
+    <p> x=6;y=4</p>
+    <button type="button" id="btn" onclick="add()">Sum</button>
+    <button type="button" id="btn" onclick="sub()">saubstract</button>
+    <button type="button" id="btn" onclick="mul()">multiply</button>
+    <button type="button" id="btn" onclick="dev()">Devide</button>
+
+    <h1>Enter the marks </h1>
+    <input type="text" class="marks" placeholder="Enter the marks"/>
+
+    <button type="button" id="btn" onclick="result()">Result</button>
+    <h2 id="demo"></h2>
+
+<script>
+            var x=6;
+            var y=4;
+
+            function add(){
+                sum=x+y;
+                console.log(sum);
+            }
+            function sub(){
+                sub=x-y;
+                console.log(sub);
+            }
+            function dev(){
+                dev=x/y;   
+                console.log(dev); 
+            }
+            function mul(){
+                mul=x*y;    
+                console.log(mul);
+            }
+
+            function result(){
+                var m=document.getElementById("marks").value;
+                // m=50;
+                if((m>40)||(m<80)) {
+                    console.log("passed");
+                    document.getElementById("demo").innerHTML="Passed";
+                }
+                else{
+                    console.log("failed");
+                    document.getElementById("demo").innerHTML="Failed";
+                }
+            }
+
+
+                
+
+    </script>
+</body>
+</html>
