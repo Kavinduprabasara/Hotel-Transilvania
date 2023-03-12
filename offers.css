@@ -100,11 +100,17 @@ main{
 }
 
 #footer{
+    padding: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: rgb(101, 99, 120);
+    color: aliceblue;
+}
+.footer-title{
+    font-size: 8vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .LOGO{
     width: 50px;
@@ -129,6 +135,9 @@ h3{
 }
 .card:hover{
     transform: scale(1.1);
+    background-image: url(outside.jpg);
+    background-size: contain;
+    transition: 1s ease-out;
 }
 
 .card_title{

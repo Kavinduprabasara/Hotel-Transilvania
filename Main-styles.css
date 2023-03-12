@@ -5,7 +5,7 @@ body{
     transition: ease-in;
     animation:opacity;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    background-color: rgb(230, 231, 208);
+    background-color: rgb(21, 21, 13);
 }
 .Header{
     background-image: url(Hotel.jpg);
@@ -25,9 +25,10 @@ body{
 .content{
     text-align: center;
     color: rgba(237, 230, 230, 0.6);
+    text-shadow: 5px 5px 5px rgb(3, 3, 3),5px 4px 6px black;
     font-family: 'Times New Roman', Times, serif;
     padding: 1em;
-    font-size: 50px;
+    font-size: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +41,7 @@ body{
     z-index: 5;
 }
 #logo{
-    width:50px;
+    width:8vh;
     padding: 5px;
     border-bottom: 2px solid rgb(0,0,0);
 }
@@ -140,13 +141,13 @@ a:hover:after {
         background-image: url(Hotel.jpg);
     }
     25%{
-        background-image: url(Room.jpg);
+        background-image: url(outside.jpg);
     }
     50%{
         background-image: url(Pool.jpg);
     }
     75%{
-        background-image: url(Bar.jpg);
+        background-image: url(bar2.jpg);
     }
     0%{
         background-image: url(Hotel.jpg);
@@ -172,10 +173,11 @@ main{
 
 .details{
     overflow: none;
-    width :30em;
+    width :50vh;
+    color: white;
 }
 .room-img{
-    width:30em;
+    width:60vh;
     border-radius: 1vh;
 
 }
@@ -197,14 +199,14 @@ main{
     top:0;
     transition: ease-in;
     width: 100%;
-    height: 4em;
+    height: 9vh;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
 
 .book , .menu{
-    padding: 2em;
+    padding: 5vh;
 }
 
 .book >button, .menu>button{
@@ -246,6 +248,10 @@ main{
     cursor: pointer;
     z-index: -1;
 }
+.seemore:hover{
+    color: white;
+    background-image:linear-gradient(180deg, rgb(8, 8, 8) -124.45%, rgba(0, 0, 0, 0.409) 100%);
+}
 
 .seemore:after {
     content: '>>';
@@ -265,6 +271,7 @@ main{
 .seemore:hover:after {
     transform: scaleX(0.5);
     transform-origin: middle left;
+
   }
 
   /* .seemore:hover:before {} */ 
@@ -275,7 +282,7 @@ main{
     text-align: center;
     color: rgba(20, 18, 18, 0.6);
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    padding: 4em;
+    padding: 4vh;
     font-size: 3vh;
     align-items: center;
     width: 100%;
