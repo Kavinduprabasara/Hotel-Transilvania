@@ -69,12 +69,6 @@ a:hover:after {
     color: rgba(26, 25, 25, 0.6);
     font-weight:lighter;
 }
-/* li >a:hover{
-    background-color: rgb(245, 250, 255,0.4);
-} */
-li >a:active{
-    background-color: rgb(118, 106, 106);
-}
 
 li{
     list-style: none;
@@ -91,13 +85,13 @@ main{
     
 }
 
-.details{
+/* .details{
     overflow: none;
     width :30em;
     box-shadow: 1px 3px 5px 1px;}
 .room-img{
     width:30em;
-}
+} */
 
 #footer{
     padding: 5vh;
@@ -136,7 +130,7 @@ h3{
 .card:hover{
     transform: scale(1.1);
     background-image: url(outside.jpg);
-    background-size: contain;
+    background-size: cover;
     transition: 1s ease-out;
 }
 
